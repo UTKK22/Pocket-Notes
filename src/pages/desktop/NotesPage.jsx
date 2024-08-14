@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react'
-import styles from "../desktop/Notespage.module.css"
+import styles from "../desktop/NotesPage.module.css"
 import { IoMdSend} from "react-icons/io";
 import { IoMdArrowBack } from "react-icons/io";
 import DesktopContent from '../../utilities/DesktopContent'
