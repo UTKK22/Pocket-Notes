@@ -179,7 +179,7 @@
 }
 @media(max-width:768px){
     .modal{
-        width: 80vw;
+        width: 90vw;
         height: 35vh;
         gap: 15px;
     }
