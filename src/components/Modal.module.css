@@ -1,0 +1,260 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+}
+
+.modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 48%; 
+    gap: 28px;
+    width: 90%;
+    
+}
+
+.head {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 46.45px;
+    letter-spacing: 0.035em;
+    text-align: left;
+    color: #000000;
+    width: 70vw;
+}
+.moda {
+    display: flex;
+    gap: 30px;
+    margin-left:15px;
+    align-items: center;
+}
+
+.moda input {
+    border-radius: 40px;
+    width: 70%;
+    text-align: start;
+    height: 43px;
+    color: #979797;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 36.84px;
+    letter-spacing: 0.035em;
+    padding: 15px;
+    /* margin-left: 10px; */
+}
+
+.moda h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.035em;
+    text-align: left;
+    color: #000000;
+}
+
+.head h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 0.035em;
+    text-align: left;
+    color: #000000;
+}
+
+.optcolor {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.optcolor h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #000000;
+    margin-left:15px;
+}
+
+.color {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.color1,
+.color2,
+.color3,
+.color4,
+.color5,
+.color6 {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: none;
+}
+
+.color1 {
+    background-color: #B38BFA;
+    
+}
+
+.color2 {
+    background-color: #FF79F2;
+}
+
+.color3 {
+    background-color: #43E6FC;
+}
+
+.color4 {
+    background-color: #F19576;
+}
+
+.color5 {
+    background-color: #0047FF;
+}
+
+.color6 {
+    background-color:  #6691FF;
+}
+
+.enablecreate{
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    background-color:#001F8B;
+    color: #FFFFFF;
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.035em;
+    text-align: center;
+    width: 180px;
+    height: 50px;
+    border-radius: 15px;
+}
+.disablecreate{
+    opacity: 0.7;
+    cursor: not-allowed;
+    background-color:#001F8B;
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    color: black;
+    font-family: "Roboto",sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.035em;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+}
+.color1:active,.color2:active,.color3:active,.color4:active,.color5:active,.color6:active{
+    border:2.5px solid black;
+}
+@media(max-width:768px){
+    .modal{
+        width: 80vw;
+        height: 35vh;
+        gap: 15px;
+    }
+    .head h2{
+        font-size: 20px;
+    }
+    .moda h2{
+        font-size: 15px;
+        line-height: 20px;
+        text-wrap:nowrap;
+    }
+    .moda input{
+        width: 40vw;
+        height: 30px;
+        font-size: 10px;
+    }
+    .optcolor h2{
+        font-size: 15px;
+        line-height: 20px;
+        text-wrap: nowrap;
+        row-gap: 1px;
+    }
+    .color{
+        gap: 4px;
+    }
+    .color button{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+    }
+}
+@media(min-width:768px){
+    .modal{
+        width: 600px;
+        height: 350px;
+        max-width: 700px;
+    }
+}
+/* @media(min-width:471px){
+    .modal{
+        width: 75vw;
+        height: 35vh;
+        gap: 15px;
+    }
+    .head h2{
+        font-size: 19px;
+    }
+    .moda{
+        margin-left: 5px;
+    }
+    .moda h2{
+        font-size: 11px;
+        line-height: 12px;
+        font-weight: 400;
+    }
+    .moda input{
+        width: 40vw;
+        height: 30px;
+        font-size: 10px;
+    }
+    .optcolor{
+        margin-left: -10px;
+    }
+    .optcolor h2{
+        font-size: 11px;
+        line-height: 12px;
+        font-weight: 400;
+    }
+
+    .color{
+        gap: 10px;
+    }
+    .color button{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+     } 
+} */
